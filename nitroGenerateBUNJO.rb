@@ -5,6 +5,8 @@ $big_chars = ('A'..'Z').to_a.join("")
 $low_chars = ('a'..'z').to_a.join("")
 $numbers = (0..9).to_a.join("")
 
+puts "Program started."
+
 File.open("code.txt", "w") do |file|
   while true
     code = []
