@@ -39,7 +39,7 @@ File.open("code.txt", "w") do |file|
         next
       end
     rescue Exception => e
-      sleep(5)
+      sleep(300)
       puts "sleeping 5 minute."
     end
   end
