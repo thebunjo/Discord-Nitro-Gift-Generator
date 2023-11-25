@@ -27,8 +27,6 @@ File.open("code.txt", "w") do |file|
     to_add = "https://discord.gift/#{created_code}"
     begin
       uri = URI.parse(to_add)
-
-      # Send a GET request
       response = Net::HTTP.get_response(uri)
 
       if response.code == '200'
